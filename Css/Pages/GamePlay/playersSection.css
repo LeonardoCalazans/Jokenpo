@@ -1,0 +1,50 @@
+.players-section{
+    font-weight: bold;
+    text-transform: uppercase;
+    color: var(--font-color-title-player);
+    text-align: center;
+    margin-top: 1rem;
+}
+.players-section > h3{
+    padding: 1rem 0 .8rem 0;
+}
+.jokenpo-options-container{
+    display: flex;
+    justify-content: space-between;
+    font-weight: bold;
+    
+    padding: 0 .8rem 0 .8rem;
+    
+    background: var(--background-container);
+    box-shadow: -5.9893px -5.9893px 17.9679px var(--shadow1), 5.9893px 5.9893px 17.9679px var(--shadow2);
+    border-radius: 23.9572px;
+}
+.jokenpo-button{
+    font-family: var(--font-padrao);
+    margin: 0.7rem;
+    border: none;
+
+    padding:  .2rem .7rem .2rem .7rem;
+    background: var(--background-container);
+    transition: .2s;
+}
+.jokenpo-img{
+    width: 2.2rem;
+    height: 2.82rem;
+    padding: 0.3rem;
+    transition: .3s;
+}
+.jokenpo-img-active{
+    fill: var(--winner-color);
+    transition: .3s;
+}
+.jokenpo-button:hover{
+    box-shadow: inset -5.9893px -5.9893px 17.9679px var(--shadow1), inset 5.9893px 5.9893px 17.9679px var(--shadow2);
+    border-radius: 17.9679px;
+    transition: .3s;
+}
+.activated-jokenpo-button{
+    box-shadow: inset -5.9893px -5.9893px 17.9679px var(--shadow1), inset 5.9893px 5.9893px 17.9679px var(--shadow2);
+    border-radius: 17.9679px;
+    transition: .3s;
+}

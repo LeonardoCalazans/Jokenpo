@@ -1,0 +1,21 @@
+.footer{
+  width: 100%;
+  display: flex;
+  justify-content: right;
+}
+.version-game {
+  font-family: var(--font-padrao);
+  font-size: 0.625rem;
+  line-height: 12px;
+  color: var(--font-color);
+
+  text-align: right;
+  text-transform: uppercase;
+  animation: show-right 5s forwards
+}
+.version-in-records {
+  position: fixed;
+  bottom: 0;
+  margin: 1rem;
+
+}

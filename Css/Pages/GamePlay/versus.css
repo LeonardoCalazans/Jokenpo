@@ -1,0 +1,29 @@
+.wrapper-versus{
+    display: flex;
+    justify-content: center;
+    padding-top: 1rem;
+}
+.versus-placar{
+    background-color: var(--font-color);
+    color: transparent;
+    text-shadow: -3px -2px 7px rgba(255, 255, 255, 0.35);
+    font-size: 3rem;
+    line-height: 3.5rem;
+    text-transform: uppercase;
+
+    -webkit-background-clip: text;
+    -moz-background-clip: text;
+    background-clip: text;
+}
+.versus-title{
+    font-size: 3rem;
+    line-height: 3.5rem;
+    text-transform: uppercase;
+    background-color: var(--font-color-title-player);
+    color: transparent;
+    text-shadow: 4px 4px 7px rgba(255, 255, 255, .7);
+    -webkit-background-clip: text;
+    -moz-background-clip: text;
+    background-clip: text;
+    padding: 0 .7rem 0 .7rem;
+}

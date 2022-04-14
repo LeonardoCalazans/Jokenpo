@@ -1,0 +1,70 @@
+[data-menu="button"] {
+  display: flex;
+  background: #222;
+  border: none;
+  padding-left: 0.8rem;
+  border-radius: 4px;
+  text-transform: uppercase;
+  font-family: "IBM Plex Mono", monospace;
+  font-weight: bold;
+  color: #fff;
+  cursor: pointer;
+  margin: 10px;
+  align-items: center;
+  position: relative;
+  z-index: 300;
+  height: 2.7rem;
+}
+
+[data-menu="button"]::before {
+  margin-right: 0.5rem;
+  content: "";
+  display: inline-block;
+  height: 0.3rem;
+  width: 2rem;
+  background: #fff;
+  box-shadow: 0 0.51rem #fff, 0 -0.51rem #fff;
+  transition: transform 0.3s;
+}
+
+[data-menu="button"].active::before {
+  transform: rotate(90deg);
+}
+[data-menu="list"] li {
+  display: flex;
+  text-transform: uppercase;
+  align-items: center;
+  justify-content: center;
+  font-weight: bold;
+  animation: show-right 0.3s forwards;
+}
+[data-menu="list"] li a:hover {
+  color: var(--font-color-title-player);
+  animation: show-right 0.3s forwards;
+}
+[data-menu="list"] {
+  display: none;
+  position: fixed;
+  justify-self: flex-end;
+  align-self: flex-end;
+  overflow: hidden;
+  z-index: 200;
+  top: 4.7rem;
+  padding: 1rem;
+  margin-right: 0.45rem;
+  width: 6rem;
+
+  box-shadow: 2px 2px 2px 0 rgba(0, 0, 0, 0.2);
+  background: var(--background-container-menu);
+  box-shadow: -5.9893px -5.9893px 17.9679px var(--shadow1),
+    5.9893px 5.9893px 17.9679px var(--shadow2);
+  border-radius: 23.9572px 0 23.9572px 23.9572px;
+}
+[data-menu="list"].active {
+  display: block;
+  animation: show-down 0.3s forwards;
+}
+
+li a{
+  padding: .75rem;
+}

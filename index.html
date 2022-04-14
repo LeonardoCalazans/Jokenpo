@@ -1,0 +1,69 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+
+<head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" type="text/css" href="Css/index.css" />
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link href="https://fonts.googleapis.com/css2?family=Roboto+Condensed:wght@700&display=swap" rel="stylesheet" />
+    <title>JOKENPO</title>
+</head>
+
+<body>
+    <nav class="navbar">
+        <a href="index.html">
+            <h1 class="title-game">JOKENPO</h1>
+        </a>
+        <button data-menu="button" aria-expanded="false" aria-controls="menu"></button>
+    </nav>
+    <ul data-menu="list" id="menu">
+        <li><a href="records.html">Recordes</a></li>
+        <li>
+            <label class="switch-label-style">
+                <a>Darkmode</a>
+                <div class="switch-wrapper-style">
+                    <input type="checkbox" id="switchButtonStyle" name="watch-style" />
+                    <span class="switch-button-style"></span>
+                </div>
+            </label>
+        </li>
+    </ul>
+    <span class="contentBar"></span>
+    <section class="section">
+        <h3>INSIRA SEU APELIDO</h3>
+        <div>
+            <label for="user">
+                <input type="text" id="user" class="control-label" placeholder="Exemplo: Alex Kid" minlength="4"
+                    maxlength="16" required="required" />
+                <span id="userSpan" style="color: red; font-size: .7rem;"></span>
+            </label>
+        </div>
+    </section>
+    <section class="section">
+        <h3>ESCOLHA A QUANTIDADE DE PARTIDAS</h3>
+        <div class="container">
+            <label class="switch-label-match">
+                <div class="switch-wrapper-match">
+                    <input type="checkbox" id="switchButtonMatch" name="watch-match" />
+                    <span class="switch-button-match"></span>
+                </div>
+            </label>
+        </div>
+    </section>
+    <section class="button-play">
+        <div class="m-p-0 play">
+            <button id="startGame" class="btn-play" type="button">
+                VAMOS COMEÇAR!
+            </button>
+        </div>
+    </section>
+    <footer class="footer" style="margin-top: 0.5rem">
+        <p class="version-game">VERSÃO 2.1.2</p>
+    </footer>
+    <script type="module" src="./Javascript/index.js"></script>
+</body>
+
+</html>

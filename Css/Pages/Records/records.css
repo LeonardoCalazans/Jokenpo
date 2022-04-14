@@ -1,0 +1,55 @@
+.flex {
+  display: flex;
+  justify-content: space-between;
+  margin: 1rem;
+  color: var(--font-color);
+}
+.records {
+  max-height: 5rem;
+  width: 100%;
+  height: 100%;
+  margin-bottom: 1rem;
+}
+.player-name-z-index {
+  z-index: 200;
+  padding-left: 1rem;
+}
+.rounds {
+  transform: rotate(335deg);
+  position: absolute;
+  z-index: 100;
+  font-size: 8rem;
+  padding-left: 2rem;
+  padding-top: 2rem;
+  background-color: var(--font-color-round);
+  color: transparent;
+  text-shadow: -1px 0px 20px var(--shadow1);
+  -webkit-background-clip: text;
+  -moz-background-clip: text;
+  background-clip: text;
+}
+
+.player-rounds {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  padding-right: 1rem;
+  height: 5rem;
+  width: 100%;
+  position: relative;
+  overflow: hidden;
+}
+.scoreboard {
+  display: flex;
+}
+.scoreboard h2 {
+  padding-right: 3rem;
+}
+
+.order-records {
+  font-size: 1rem;
+  font-family: var(--font-padrao);
+  border: none;
+  background-color: transparent;
+  color: var(--font-color);
+}

@@ -1,0 +1,52 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+
+<head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" type="text/css" href="Css/index.css" />
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link href="https://fonts.googleapis.com/css2?family=Roboto+Condensed:wght@700&display=swap" rel="stylesheet" />
+    <title>JOKENPO</title>
+</head>
+
+<body>
+    <nav class="navbar">
+        <a href="index.html">
+            <h1 class="title-game">JOKENPO</h1>
+        </a>
+        <button data-menu="button" aria-expanded="false" aria-controls="menu"></button>
+    </nav>
+    <ul data-menu="list" id="menu">
+        <li><a href="index.html">Home</a></li>
+        <li>
+            <label class="switch-label-style">
+                <a>Darkmode</a>
+                <div class="switch-wrapper-style">
+                    <input type="checkbox" id="switchButtonStyle" name="watch-style" />
+                    <span class="switch-button-style"></span>
+                </div>
+            </label>
+        </li>
+    </ul>
+    <span class="contentBar"></span>
+    <section class="flex">
+        <button class="order-records" id="orderRecordsByName">Recordes</button>
+        <div>
+            <button class="order-records" id="orderRecordsByVictory">Vitórias</button> /<button class="order-records"
+                id="orderRecordsByLose"> Derrotas</button>
+        </div>
+    </section>
+    <section class="section">
+        <ul id="recordList">
+        </ul>
+    </section>
+    <footer class="footer" style="margin-top: 0.5rem">
+        <p class="version-game version-in-records">VERSÃO 2.1.2</p>
+    </footer>
+    <script type="module" src="./Javascript/records.js"></script>
+</body>
+
+</html>

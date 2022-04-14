@@ -1,0 +1,152 @@
+:root {
+  --body-color: #e5e5e5;
+
+  --shadow1: rgba(255, 255, 255, 0.55);
+  --shadow2: rgba(136, 160, 183, 0.25);
+  --shadow3: rgba(136, 160, 183, 0.15);
+  --shadow-button-play: #ffffff;
+  --shadow-button-play2: rgba(174, 174, 192, 0.4);
+
+  --background-container: #eeeeee;
+  --background-container-menu: #ffffff;
+  --background-button: #f0f0f3;
+  --background-menu: #d8d8d8;
+
+  --winner-color: #54ba70;
+
+  --font-color-round: rgb(212, 209, 209);
+  --font-color: #000000;
+  --font-color-title-player: #888888;
+  --font-color-placeholder: rgb(182, 182, 182);
+  --font-padrao: "Roboto Condensed", sans-serif;
+}
+.dark-mode {
+  --body-color: #353535;
+
+  --shadow1: rgba(255, 255, 255, 0.233);
+  --shadow2: rgba(136, 160, 183, 0.116);
+  --shadow3: rgba(136, 160, 183, 0.062);
+  --shadow-button-play: rgba(255, 255, 255, 0.185);
+  --shadow-button-play2: rgba(174, 174, 192, 0.103);
+
+  --background-container: #1f1e1e;
+  --background-container-menu: #1f1e1e;
+  --background-button: #1f1e1e;
+  --background-menu: #000;
+
+  --winner-color: #54ba70;
+
+  --font-color-round: rgba(71, 71, 71, 0.603);
+  --font-color: #fff;
+  --font-color-title-player: #ffffff;
+  --font-color-placeholder: rgba(182, 182, 182, 0.137);
+}
+/* Faz com que o site fique igual em todos os navegadores */
+html,
+body,
+span,
+p,
+form,
+img,
+a,
+ul,
+ol,
+li,
+table,
+tr,
+td,
+div {
+  margin: 0;
+  padding: 0;
+  border: none;
+  outline: none;
+  list-style-type: none;
+  text-decoration: none;
+}
+a {
+  color: var(--font-color);
+}
+/*  */
+html,
+body {
+  display: flex;
+  flex-wrap: wrap;
+  flex-direction: column;
+  background-color: var(--body-color);
+  font-family: var(--font-padrao);
+  padding: 0.5rem;
+}
+h1,
+h1,
+h2,
+h3,
+h4,
+h5,
+h6,
+h7,
+h8 {
+  padding: 0;
+  margin: 0;
+  font-weight: bold;
+}
+.hidden {
+  visibility: hidden;
+  display: none !important;
+  transition: 3s;
+}
+.m-p-0 {
+  margin: 0;
+  padding: 0;
+}
+
+body::-webkit-scrollbar {
+  width: 1rem;
+}
+
+body::-webkit-scrollbar-track {
+  background: var(--body-color);
+}
+
+body::-webkit-scrollbar-thumb {
+  background-color: var(--font-color-placeholder);
+  border-radius: 20px;
+  border: 0px solid var(--font-color);
+}
+
+@media only screen and (min-width: 500px) {
+  :root {
+    font-size: 22px;
+  }
+}
+@media only screen and (min-width: 750px) {
+  :root {
+    font-size: 22.2px;
+    /* padding: 0; */
+  }
+  body {
+    width: 700px;
+    margin: 0 auto;
+  }
+}
+
+@keyframes show-right {
+  from {
+    opacity: 0;
+    transform: translate3d(-30px, 0, 0);
+  }
+  to {
+    opacity: 1;
+    transform: translate3d(0, 0, 0);
+  }
+}
+
+@keyframes show-down {
+  from {
+    opacity: 0;
+    transform: translate3d(0, -30px, 0);
+  }
+  to {
+    opacity: 1;
+    transform: translate3d(0, 0, 0);
+  }
+}

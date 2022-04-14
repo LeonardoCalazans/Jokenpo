@@ -1,0 +1,14 @@
+@import url("./StyleAllPages/stylesGame.css");
+@import url("./StyleAllPages/navbar.css");
+@import url("./StyleAllPages/menuHamburguer.css");
+@import url("./StyleAllPages/footer.css");
+
+@import url("./Pages/Index/home.css");
+
+@import url("./Pages/GamePlay/buttonPlay.css");
+@import url("./Pages/GamePlay/CPU.css");
+@import url("./Pages/GamePlay/loadingResult.css");
+@import url("./Pages/GamePlay/playersSection.css");
+@import url("./Pages/GamePlay/versus.css");
+
+@import url("./Pages/Records/records.css");

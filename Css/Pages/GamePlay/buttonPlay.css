@@ -1,0 +1,35 @@
+.button-play{
+    border: none;
+    color: var(--font-color);
+    width: 100%;
+    height: 12.57rem;
+
+    background: var(--background-button);
+    box-shadow: -10px -10px 30px var(--shadow-button-play), 10px 10px 30px var(--shadow-button-play2);
+    border-radius: 16px;
+}
+.play{
+    width: 100%;
+    height: 100%;
+}
+.btn-play{
+    font-family: var(--font-padrao);
+    align-items: center;
+    border: none;
+    width: 100%;
+    height: 100%;
+    border-radius: 16px;
+
+    font-weight: bold;
+    font-size: 3rem;
+    line-height: 3.5rem;
+    text-transform: uppercase;
+    transition: .2s;
+
+    background-color: var(--font-color);
+    color: transparent;
+    text-shadow: -3px -2px 7px rgba(255, 255, 255, 0.35);
+    -webkit-background-clip: text;
+    -moz-background-clip: text;
+    background-clip: text;
+}

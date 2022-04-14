@@ -1,0 +1,19 @@
+.cpu-section{
+    font-weight: bold;
+    text-transform: uppercase;
+    color: var(--font-color-title-player);
+    text-align: center;
+    margin-top: 1rem;
+    margin-bottom: 1rem;
+}
+.show-winner {
+    font-size: 2rem;
+    font-weight: 700;
+    text-transform: uppercase;
+    color: var(--winner-color);
+    text-align: center;
+    margin-top: 1rem;
+}
+#round{
+    margin-top: .5rem;
+}
