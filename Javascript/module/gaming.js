@@ -1,4 +1,4 @@
-import newGame from './Player/createNewPlayerForRounds.js'
+import newGame from './Logic/createNewPlayerForRounds.js'
 import newRecord from './Records/newRecords.js';
 import matchResult from './Logic/matchResult.js';
 import addingScore from './Logic/addingScore.js';
