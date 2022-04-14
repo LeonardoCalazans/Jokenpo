@@ -1,45 +1,41 @@
-import { Records } from "./getRecords.js";
+import { displayingRecords, recordList } from "./displayingRecords.js";
+import { recordUl } from '../../records.js';
 export default function onClickOrderRecords() {
 
     const orderRecordsByVictory = document.querySelector('#orderRecordsByVictory');
     const orderRecordsByName = document.querySelector('#orderRecordsByName');
     const orderRecordsByLose = document.querySelector('#orderRecordsByLose');
 
-    const recordUl = document.querySelector('#recordList');
-    const getRecords = JSON.parse(localStorage.getItem('Records'));
-
     orderRecordsByVictory.addEventListener('click', onClickWin);
     orderRecordsByLose.addEventListener('click', onClickLose);
     orderRecordsByName.addEventListener('click', onClickName);
 
     function onClickWin() {
-        getRecords.sort(function (a, b) {
-            if (a.scoreWin < b.scoreWin) {
+        recordList.sort(function (a, b) {
+            if (a.win < b.win) {
                 return 1;
             }
-            if (a.scoreWin > b.scoreWin) {
+            if (a.win > b.win) {
                 return -1;
             }
             return 0;
         });
-        localStorage.setItem('Records', JSON.stringify(getRecords));
-        Records(recordUl);
+        displayingRecords(recordUl);
     }
     function onClickLose() {
-        getRecords.sort(function (a, b) {
-            if (a.scoreLose < b.scoreLose) {
+        recordList.sort(function (a, b) {
+            if (a.lose < b.lose) {
                 return 1;
             }
-            if (a.scoreLose > b.scoreLose) {
+            if (a.lose > b.lose) {
                 return -1;
             }
             return 0;
         });
-        localStorage.setItem('Records', JSON.stringify(getRecords));
-        Records(recordUl);
+        displayingRecords(recordUl);
     }
     function onClickName() {
-        getRecords.sort(function (a, b) {
+        recordList.sort(function (a, b) {
             if (a.player > b.player) {
                 return 1;
             }
@@ -48,8 +44,7 @@ export default function onClickOrderRecords() {
             }
             return 0;
         });
-        localStorage.setItem('Records', JSON.stringify(getRecords));
-        Records(recordUl);
+        displayingRecords(recordUl);
     }
 
 }

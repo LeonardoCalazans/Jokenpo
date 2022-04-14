@@ -1,7 +1,10 @@
-export function Records(recordUl) {
+import getRecords from "../Firestore/getRecords.js";
+
+export const recordList = await getRecords();
+
+export function displayingRecords(recordUl) {
     recordUl.innerHTML = '';
-    const getRecords = JSON.parse(localStorage.getItem('Records'));
-    getRecords.map(({ player, rounds, scoreLose, scoreWin }, index) => {
+    recordList.map(({ player, rounds, lose, win }, index) => {
         setTimeout(() => {
             recordUl.innerHTML = recordUl.innerHTML +
                 `<li class="container records" style="animation: show-right ${index}s forwards">
@@ -10,15 +13,10 @@ export function Records(recordUl) {
                     <span class="rounds">${rounds}</span>
                 </div>
                 <div class="scoreboard">
-                    <h2>${scoreWin}</h2>
-                    <h2>${scoreLose}</h2>
+                    <h2>${win}</h2>
+                    <h2>${lose}</h2>
                 </div>
             </li>`;
         }, 1000);
     });
-}
-
-export default function InitGetRecords() {
-    const recordUl = document.querySelector('#recordList');
-    Records(recordUl);
 }
