@@ -32,34 +32,34 @@
         </li>
     </ul>
     <span class="contentBar"></span>
-    <section class="section">
-        <h3>INSIRA SEU APELIDO</h3>
-        <div>
-            <label for="user">
-                <input type="text" id="user" class="control-label" placeholder="Exemplo: Alex Kid" minlength="4"
-                    maxlength="16" required="required" />
-                <span id="userSpan" style="color: red; font-size: .7rem;"></span>
-            </label>
-        </div>
-    </section>
-    <section class="section">
-        <h3>ESCOLHA A QUANTIDADE DE PARTIDAS</h3>
-        <div class="container">
-            <label class="switch-label-match">
-                <div class="switch-wrapper-match">
-                    <input type="checkbox" id="switchButtonMatch" name="watch-match" />
-                    <span class="switch-button-match"></span>
-                </div>
-            </label>
-        </div>
-    </section>
-    <section class="button-play">
-        <div class="m-p-0 play">
-            <button id="startGame" class="btn-play" type="button">
-                VAMOS COMEÇAR!
-            </button>
-        </div>
-    </section>
+    <form action="/gamePlay.html">
+
+        <section class="section">
+            <h3>INSIRA SEU APELIDO</h3>
+            <div>
+                <label for="user">
+                    <input type="text" id="user" class="control-label" placeholder="Exemplo: Alex Kid" minlength="4"
+                        maxlength="16" required />
+                </label>
+            </div>
+        </section>
+        <section class="section">
+            <h3>ESCOLHA A QUANTIDADE DE PARTIDAS</h3>
+            <div class="container">
+                <label class="switch-label-match">
+                    <div class="switch-wrapper-match">
+                        <input type="checkbox" id="switchButtonMatch" name="watch-match" />
+                        <span class="switch-button-match"></span>
+                    </div>
+                </label>
+            </div>
+        </section>
+        <section class="button-play">
+            <div class="m-p-0 play">
+                <input id="startGame" class="btn-play" type="submit" value="VAMOS COMEÇAR!" />
+            </div>
+        </section>
+    </form>
     <footer class="footer" style="margin-top: 0.5rem">
         <p class="version-game">VERSÃO 2.1.2</p>
     </footer>
