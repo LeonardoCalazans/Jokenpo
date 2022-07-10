@@ -4,6 +4,8 @@ import { collection, getDocs, addDoc, Timestamp } from "https://www.gstatic.com/
 import { query, orderBy, limit, where, onSnapshot } from "https://www.gstatic.com/firebasejs/9.1.1/firebase-firestore.js"
 // import { getDatabase } from "https://www.gstatic.com/firebasejs/9.1.1/firebase-database.js";
 
+require('dotenv').config();
+
 export function initFirebase() {
     const firebaseConfig = {
         apiKey: process.env.FIREBASE_API_KEY,
@@ -13,7 +15,7 @@ export function initFirebase() {
         storageBucket: process.env.FIREBASE_STORAGE_BUCKET,
         messagingSenderId: process.env.FIREBASE_MESSAGING_SENDER_ID,
         appId: process.env.FIREBASE_APP_ID,
-        measurementId: process.env.FIREBASE_MEASUREMENT_ID"
+        measurementId: process.env.FIREBASE_MEASUREMENT_ID,
     };
 
     return firebaseConfig

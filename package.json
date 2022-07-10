@@ -1,6 +1,8 @@
 {
   "dependencies": {
-    "@supabase/supabase-js": "^1.30.1"
+    "dotenv": "^16.0.1",
+    "node": "^18.5.0",
+    "node-env-run": "^4.0.2"
   },
   "devDependencies": {
     "@rollup/plugin-json": "^4.1.0",
